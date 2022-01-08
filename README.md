@@ -1,12 +1,12 @@
 # Flutter facenet app
 
-This app automatically finds images of people such as politicians (could be anyone!) using on device facial recognition using the FaceNet ML model and Flutter framework. It then allows the user to take an action, such as delete, on the filtered images.
+This app automatically finds images of people such as politicians (could be anyone!) using on-device facial recognition and then allows the user to take an action, such as delete, on the filtered images. It is written using the Flutter framework. Face detection is performed using Firebase ML Vision and facial recognition is done using the FaceNet ML model.
 
 # How it works
 
-The app contains a .tflite model file for the FaceNet model. This model is initialized during the first load of the model. During the initialization the model is trained on a pre-defined set of images for the people I am interested in finding. This pre-defined set of images could be of any one and can also be loaded after the app starts. I have included them in the app to keep things simple for now. Besides this, the app initializes the ads, default preferences and local DB.
+When the app starts up for the first time, it initializes the FaceNet model that is stored in .tflite format and shipped with the application. During the initialization, the model is trained on a pre-defined set of images of the people we are interested in finding. This pre-defined set of images could be of anyone and can be loaded after the app starts. I have included them in the app to keep things simple for now. Besides this, the app initializes the ads, default preferences and local DB.
 
-When a search is performed the app scans a configurable amount of images in the folder selected by the user. This folder is set to location of Watsapp by defaullt. Once a match is found withing the acceptable level of confidence, the app generates a yellow square around the face of the person matched. These scanned results are stored in a local DB and displayed to the user in a grid. The app keeps track of all the files scanned previously to avoid scanning them again. It also scans each image for all the target people in one go to save some time scanning the same image again for the other targets. The app then gives the user the option to either mark the scanned image as a wrong match or delete all the images found to free up space on the device.
+When a search is performed, the app scans a configurable amount of images in the folder selected by the user. By default, this folder is set to the location of Watsapp. Once a match is found within the acceptable level of confidence, the app generates a yellow box around the matched face and calculates the level of confidence the model has on the matched face. The results from the scan are stored in the local database. All images with a match are displayed to the user in a grid. The app keeps track of all the files scanned previously to avoid scanning them again. It also scans each image for all the target people in one go to save time scanning the same image again for the other targets. An option is given to the user to either mark the scanned image as a wrong match or to delete all the images found to free up space on the device.
 
 The app allows the users to play with some parameters. It allows users to set the number of images to scan in one go. It also allows the users to adjust the confidence level threshold to use for each target person.
 
@@ -20,7 +20,7 @@ Modify following files for building the project:
 4. lib/service/ModelManager.dart -> Add the name of your model in this file
 5. Follow the instructions on this [blog](https://medium.com/@estebanuri/converting-sandbergs-facenet-pre-trained-model-to-tensorflow-lite-using-an-unorthodox-way-7ee3a6ed02a3) to generate your model .tflite file.
 
-Feel free to use the code for following purposes:
+Feel free to use the code for the following purposes:
 
 1. Learning Flutter
 2. Learning to use Tensorflow models with Flutter
@@ -28,6 +28,6 @@ Feel free to use the code for following purposes:
 
 # GoNawazGo on PlayStore
 
-In case you want to see a demo of how this code works then check out the app
+In case you want to see a demo of how this code works then feel free to download the app from the PlayStore
 
 [<img src="google-play-badge.png" height="50">](https://play.google.com/store/apps/details?id=com.stackorithm.gng) 
