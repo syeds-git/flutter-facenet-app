@@ -12,4 +12,6 @@ Feel free to use the code for following purposes:
 
 # GoNawazGo on PlayStore
 
-In case you want to see a demo of how this code works then check out the app https://play.google.com/store/apps/details?id=com.stackorithm.gng
+In case you want to see a demo of how this code works then check out the app
+
+[<img src="google-play-badge.png" height="50">](https://play.google.com/store/apps/details?id=com.stackorithm.gng) 
