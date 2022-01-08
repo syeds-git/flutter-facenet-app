@@ -1,6 +1,6 @@
 # Flutter facenet app
 
-This app automatically finds images of people such as politicians (could be anyone!) using on device facial recognition using the FaceNet ML model and Flutter framework.
+This app automatically finds images of people such as politicians (could be anyone!) using on device facial recognition using the FaceNet ML model and Flutter framework. It then allows the user to take an action, such as delete, on the filtered images.
 
 # Notes
 
