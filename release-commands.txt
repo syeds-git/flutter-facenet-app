@@ -1,0 +1,8 @@
+flutter clean
+flutter build appbundle
+cp build/app/outputs/bundle/release/app-release.aab /c/apps/
+cd /c/apps
+rm app-release.apks
+java -jar bundletool-all-1.3.0.jar build-apks --bundle=app-release.aab --output=app-release.apks --ks=<key-file>.jks --ks-pass=pass:<key-password> --ks-key-alias=key --key-pass=pass:<key-password>
+java -jar bundletool-all-1.3.0.jar install-apks --apks=app-release.apks
+cd /c/work/flapp
