@@ -28,6 +28,6 @@ Feel free to use the code for the following purposes:
 
 # GoNawazGo on PlayStore
 
-In case you want to see a demo of how this code works then feel free to download the app from the PlayStore
+In case you want to see a demo of how this code works then feel free to download the app from the Google Play Store
 
 [<img src="google-play-badge.png" height="50">](https://play.google.com/store/apps/details?id=com.stackorithm.gng) 
