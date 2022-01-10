@@ -1,3 +1,5 @@
 theme: jekyll-theme-hacker
 title: Flutter facenet app
 description: A Flutter app to find images of people using on device facial recognition
+show_downloads: true
+google_analytics: G-LXRXBQYN4R
