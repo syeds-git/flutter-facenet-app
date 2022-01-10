@@ -10,9 +10,10 @@ When a search is performed, the app scans a configurable amount of images in the
 
 The app allows the users to play with some parameters. It allows users to set the number of images to scan in one go. It also allows the users to adjust the confidence level threshold to use for each target person.
 
-# Custom trained TensorFlow Lite models vs FaceNet
+# Blog posts
 
-Read [Custom trained TensorFlow Lite models vs FaceNet](https://medium.com/@syed.taha/custom-tensorflow-lite-vs-facenet-14bc0fd00b77)
+- [Custom trained TensorFlow Lite models vs FaceNet](https://medium.com/@syed.taha/custom-tensorflow-lite-vs-facenet-14bc0fd00b77)
+- [5 things to consider before starting a Flutter project](https://medium.com/@syed.taha/five-things-to-consider-before-starting-a-flutter-project-c50b09a532f9)
 
 # Notes
 
